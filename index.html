@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+</head>
+<body>
+<div class="header">
+	<div class="container">
+		<div class="brand">
+			CHAT
+		</div>
+	</div>	
+</div>
+<div class="container">
+		<h1>Fai click su icona in basso per aprire la chat</h1>
+</div>
+<div class="footer">
+		<div class="container">
+			<div class="chat-box">
+			<div class="chat-header">
+				<img class="chat-photo" src="https://placehold.it/50x50">
+				<h3>Riccardo Schifaudo</h3>
+				<div class="chat-status"></div>
+			</div>
+			<div class="chat-container">
+				<div class="chat-cloud-sender">
+					<div class="chat-text">Ciao come stai? :)</div>
+					<div class="chat-arrow"></div>
+				</div>
+				<div class="chat-cloud-receiver">
+					<div class="chat-text">Bene grazie, e te?</div>
+					<div class="chat-arrow"></div>
+				</div>
+			</div>
+			<div class="chat-footer">
+				<input type="text" 
+					   class="chat-input" 
+					   onkeydown="enable_send()"  
+					   onchange="enable_send()" 
+					   placeholder="scrivi qui...">
+				<button type="submit" onclick="send();">
+					<i class="fa fa-paper-plane fa-2x"></i>
+				</button>
+			</div>
+		</div>
+		<div style="float:right;">
+			<div class="chat-btn-open" onclick="open_chat();"><i class="fa fa-comments-o"></i></div>
+			<div class="chat-btn-close" onclick="close_chat();"><i class="fa fa-times"></i></div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="js/jquery.min.js" async></script>
+<script type="text/javascript" src="js/chat.js"></script>
+</html>
